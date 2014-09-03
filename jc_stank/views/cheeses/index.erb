@@ -1,0 +1,13 @@
+<%= render(:erb, :_header) %>
+
+
+
+
+
+<ul>
+  <% @cheeses.each do |cheese, index| %>
+  <li>
+    <%= render(:erb, :"cheeses/_cheese", :locals => {:item => cheese}) %>
+  </li>
+    <% end %>
+</ul>

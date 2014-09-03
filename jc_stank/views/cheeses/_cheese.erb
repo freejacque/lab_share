@@ -1,0 +1,16 @@
+
+    <div class="cheese">
+    <h4><%= item["name"] %></h4>
+    </div>
+    <div class="aspects">
+     <p>Stink Level:<%= item["stank_level"] %></p>
+     <p>Country: <%= item["country"] %></p>
+     <p>Milk Type: <%= item["milk_type"] %></p>
+     </div>
+     <% if item["show"] %>
+      <p><%= item["desc"] %></p>
+     <% end %>
+     <a href="/<%= item["id"].gsub(':','/') %>"><img src="<%= item["image_url"] %>" width="400px"/></a>
+    </div>
+
+
